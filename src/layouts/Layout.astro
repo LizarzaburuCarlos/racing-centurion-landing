@@ -1,0 +1,41 @@
+---
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>RACING CENTURIÓN AT</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      :root {
+      }
+      html {
+        /* font-family: "Poppins", sans-serif; */
+        background-color: white;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        height: -web-fill-available;
+      }
+
+      body {
+        height: -web-fill-available;
+      }
+
+      * {
+        /* font-family: "Poppins", sans-serif; */
+      }
+    </style>
+  </body>
+</html>
