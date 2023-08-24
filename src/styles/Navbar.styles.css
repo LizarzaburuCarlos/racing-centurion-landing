@@ -1,0 +1,6 @@
+.navbar{
+    background-image: url("/img/header_placeholder.png");
+    mix-blend-mode: luminosity;
+    background-size: cover;
+    background-position: center;
+}
